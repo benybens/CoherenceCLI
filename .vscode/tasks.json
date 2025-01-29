@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build with MSVC",
+            "type": "shell",
+            "command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+            "args": [
+                "/EHsc",
+                "/std:c++17",
+                "/I", "D:\\Outlandsight\\boost_1_87_0\\boost",
+                "/I", "D:\\Outlandsight\\CoherenceCLI\\third_party\\tinyxml2",
+                "D:\\Outlandsight\\CoherenceCLI\\main.cpp",
+                "D:\\Outlandsight\\CoherenceCLI\\third_party\\tinyxml2\\tinyxml2.cpp",
+                "/Fe:D:\\Outlandsight\\CoherenceCLI\\output_program.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$msCompile"]
+        }
+    ]
+}
